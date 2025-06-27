@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Thiago</title>
+
+  <!-- Bootstrap e Ícones -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- CABEÇALHO -->
+  <header class="container text-center my-5">
+    <img src="img/avatar.png" alt="avatar do Thiago" class="rounded-circle" width="150" height="150" />
+    <p class="lead mt-3">Eu sou Thiago_</p>
+    <h1>Eu estudo Programação</h1>
+    <p>Sou estudante do Ensino Médio e estudo pensamento computacional na plataforma Alura. Já desenvolvi vários projetos com JavaScript, Scratch e páginas Web. Atualmente estou aprendendo HTML, CSS e JavaScript. Veja os projetos que já desenvolvi!</p>
+    <h2 class="mt-4">Minhas habilidades</h2>
+    <div>
+      <span class="badge bg-secondary">HTML</span>
+      <span class="badge bg-secondary">CSS</span>
+      <span class="badge bg-secondary">JavaScript</span>
+      <span class="badge bg-secondary">Scratch</span>
+    </div>
+  </header>
+
+  <!-- PROJETOS -->
+  <main class="container mt-5">
+    <h2>Meus Projetos</h2>
+    <div class="row">
+
+      <!-- Projeto 1: CineMarvel -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/meu-projeto1.png" class="card-img-top" alt="Imagem do projeto CineMarvel">
+          <div class="card-body">
+            <h5 class="card-title">CineMarvel</h5>
+            <p class="card-text">Um site que apresenta os filmes da Marvel de forma interativa.</p>
+            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalCineMarvel">
+              Veja o projeto
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 2: Astronomia Interativa -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="img/projeto-astronomia.png" class="card-img-top" alt="Imagem do projeto Astronomia Interativa">
+          <div class="card-body">
+            <h5 class="card-title">Explorando o Universo com Scratch</h5>
+            <p class="card-text">Um projeto educativo sobre astronomia com interações e simulações no Scratch.</p>
+            <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalAstronomia">
+              Veja o projeto
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- MODAL: CineMarvel -->
+  <div class="modal fade" id="modalCineMarvel" tabindex="-1" aria-labelledby="modalCineMarvelLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalCineMarvelLabel">CineMarvel</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Projeto desenvolvido com HTML, CSS e JavaScript que exibe os filmes da Marvel. Possui imagens, links e uma interface moderna.</p>
+          <img src="img/meu-projeto1.png" class="img-fluid w-100" alt="Imagem do CineMarvel">
+        </div>
+        <div class="modal-footer">
+          <a href="file:///C:/Users/Micro/Downloads/CineMarvel-main/CineMarvel-main/index.html" class="btn btn-primary" target="_blank">Ver projeto</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Astronomia Interativa -->
+  <div class="modal fade" id="modalAstronomia" tabindex="-1" aria-labelledby="modalAstronomiaLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalAstronomiaLabel">Explorando o Universo com Scratch</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Este projeto é uma aplicação educativa interativa focada em ensinar conceitos básicos de astronomia. Utiliza uma série de scripts associados a diferentes atores (sprites) e cenários para criar uma experiência de aprendizado envolvente. O objetivo é familiarizar os usuários com tópicos como as fases da Lua, eclipses, a visibilidade de diferentes constelações dependendo da localização geográfica na Terra e a forma da Terra, através de interações e visualizações dinâmicas.</p>
+          <p>Cada ator no projeto possui scripts que definem seu comportamento em resposta a eventos específicos, como o início do programa (quando a bandeira é clicada), cliques do usuário ou mensagens recebidas. Estes eventos desencadeiam ações como mudanças de cenário, movimentos de atores, exibição ou ocultação de atores e a apresentação de diálogos informativos.</p>
+          <p>A importância das ferramentas utilizadas, como os blocos de código visual do Scratch, reside na sua acessibilidade e na capacidade de engajar aprendizes de diferentes idades no pensamento computacional e na exploração de conceitos científicos de forma interativa. O uso de cenários, movimentos e diálogos dinâmicos ajuda a criar uma experiência de aprendizado mais rica e memorável.</p>
+          <img src="img/projeto-astronomia.png" alt="Imagem do projeto Astronomia Interativa" class="img-fluid w-100">
+        </div>
+        <div class="modal-footer">
+          <a href="https://scratch.mit.edu/projects/951732825/" class="btn btn-primary" target="_blank">Ver projeto ao vivo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RODAPÉ -->
+  <footer class="container py-5">
+    <h2>Entre em contato</h2>
+    <div>
+      <i class="bi bi-github"></i>
+      <a href="https://github.com/seu-usuario-aqui" target="_blank">GitHub</a>
+    </div>
+    <p class="my-5 text-center">© 2024 - Thiago do Nascimento Pereira</p>
+  </footer>
+
+  <!-- Scripts Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
